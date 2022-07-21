@@ -26,7 +26,7 @@ func runDotToImage(outfname string, format string, dot []byte) (string, error) {
 	}()
 	var img string
 	if outfname == "" {
-		img = filepath.Join(os.TempDir(), fmt.Sprintf("go-callvis_export.%s", format))
+		img = filepath.Join(os.TempDir(), fmt.Sprintf("go-chain_export.%s", format))
 	} else {
 		img = fmt.Sprintf("%s.%s", outfname, format)
 	}

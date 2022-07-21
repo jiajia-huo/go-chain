@@ -32,7 +32,7 @@ const tmplEdge = `{{define "node" -}}
     {{printf "%q [ %s ]" .ID .Attrs}}
 {{- end}}`
 
-const tmplGraph = `digraph gocallvis {
+const tmplGraph = `digraph gochain {
     label="{{.Title}}";
     labeljust="l";
     fontname="Arial";
@@ -158,7 +158,7 @@ func runDotToImageCallSystemGraphviz(outfname string, format string, dot []byte)
 
 	var img string
 	if outfname == "" {
-		img = filepath.Join(os.TempDir(), fmt.Sprintf("go-callvis_export.%s", format))
+		img = filepath.Join(os.TempDir(), fmt.Sprintf("go-chain_export.%s", format))
 	} else {
 		img = fmt.Sprintf("%s.%s", outfname, format)
 	}
