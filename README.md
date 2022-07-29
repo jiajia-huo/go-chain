@@ -21,7 +21,7 @@ Usage of go-chain:
   -ignore string
         忽略 package paths 前缀或者后缀字符串,逗号分割
   -otherPackage string
-        添加其他package,逗号分割，例如sdk:git.garena.com/shopee/experiment-platform/abtest-core/...
+        添加其他package,逗号分割，例如sdk:github.com/xxx/xxx/xxx/...
   -version
         Show version and exit.
 
@@ -42,9 +42,9 @@ go-chain -file=file_name -format=svg -diff
 go-chain -file=file_name -format=svg -f=GetLayerConfig,load,store
 
 #获取包含第三方sdk的的调用链
-go-chain -file=file_name -format=svg -otherPackage=git.garena.com/shopee/experiment-platform/abtest-core/...
+go-chain -file=file_name -format=svg -otherPackage=github.com/xxx/xxx/xxx/...
 
 #忽略指定前缀或者后缀的package
-go-chain -file=file_name -format=svg -ignore=.pb,abtest/traffic
+go-chain -file=file_name -format=svg -ignore=.pb,xxx/traffic
 
 ```

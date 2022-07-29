@@ -20,7 +20,7 @@ Flags:
 `
 
 var (
-	otherPackage = flag.String("otherPackage", "", "添加其他package,逗号分割，例如sdk:git.garena.com/shopee/experiment-platform/abtest-core/...")
+	otherPackage = flag.String("otherPackage", "", "添加其他package,逗号分割，例如sdk:github.com/xxx/xxx/xxx/...")
 	outputFile   = flag.String("file", "output", "输出文件名字")
 	outputFormat = flag.String("format", "svg", "输出文件格式 [svg | png | jpg | ...]")
 	diff         = flag.Bool("diff", false, "和master对比，只输出变动涉及到的func相关链路.")
